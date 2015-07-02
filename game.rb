@@ -1,6 +1,9 @@
 require "title_screen"
 
 class Game
+
+  TRAITS = [Role]
+
   def initialize
     @ui = UI.new
     @options = { quit: false, randall: false }
@@ -9,6 +12,7 @@ class Game
 
   def run
     title_screen
+    setup_character
   end
 
   private
@@ -22,5 +26,16 @@ class Game
 
   def quit?
     exit if options[:quit]
+  end
+
+  def setup_character
+    get_traits
+  end
+
+  def get_traits
+    TRAITS.each do |trait|
+      SelectionScreen.new(trait, ui, options).render
+      quit?
+    end
   end
 end
