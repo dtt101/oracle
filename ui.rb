@@ -20,7 +20,7 @@ class UI
 
     loop do
       choice = getch
-      return choice if choice.includes?(choice)
+      return choice if choices.include?(choice)
     end
   end
 

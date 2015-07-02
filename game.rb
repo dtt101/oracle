@@ -1,7 +1,10 @@
+require "title_screen"
+
 class Game
   def initialize
     @ui = UI.new
-    at_exit { ui.close }
+    @options = { quit: false, randall: false }
+    at_exit { ui.close; p options }
   end
 
   def run
@@ -10,13 +13,14 @@ class Game
 
   private
 
-  attr_reader :ui
+  attr_reader :ui, :options
 
   def title_screen
-    ui.message(0, 0, "Oracle")
-    ui.message(7, 1, "Wise Owl Games")
-    ui.choice_prompt(0, 3, "Shall I pick a character's race, role, gender and" +
-      " alignment for you? [ynq]", ["ynq"])
+    TitleScreen.new(ui, options).render
+    quit?
+  end
 
+  def quit?
+    exit if options[:quit]
   end
 end
