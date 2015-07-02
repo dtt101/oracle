@@ -1,7 +1,7 @@
+$LOAD_PATH.unshift "."
+
 require "curses"
+require "ui"
+require "game"
 
-include Curses
-
-init_screen
-getch
-close_screen
+Game.new.run
