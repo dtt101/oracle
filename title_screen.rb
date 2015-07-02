@@ -2,21 +2,21 @@ class TitleScreen
   def initialize(ui, options)
     @ui = ui
     @options = options
+    @messages = Messages[:title]
   end
 
   def render
-    ui.message(0, 0, "Oracle")
-    ui.message(7, 1, "Wise Owl Games")
+    ui.message(0, 0, messages[:name])
+    ui.message(7, 1, messages[:by])
     handle_choice prompt
   end
 
   private
 
-  attr_reader :ui, :options
+  attr_reader :ui, :options, :messages
 
   def prompt
-    ui.choice_prompt(0, 3, "Shall I pick a character's race, role, gender and" +
-      " alignment for you? [ynq]", "ynq")
+    ui.choice_prompt(0, 3, messages[:pick_random], "ynq")
   end
 
   def handle_choice(choice)
