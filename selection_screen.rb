@@ -21,7 +21,7 @@ class SelectionScreen
   attr_reader :items, :ui, :options, :key, :messages
 
   def random?
-    options[:randall]
+    options[:randall] || items.length == 1
   end
 
   def random_item
@@ -37,7 +37,7 @@ class SelectionScreen
   end
 
   def instructions
-    messages[:instructions]
+    @instructions ||= interpolate(messages[:instructions])
   end
 
   def right_offset
@@ -70,6 +70,10 @@ class SelectionScreen
 
   def hotkeys
     items.map(&:hotkey).join + "*q"
+  end
+
+  def interpolate(message)
+    message.gsub(/%(\w+)/) { options[$1.to_sym] }
   end
 
 end

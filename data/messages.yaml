@@ -5,4 +5,7 @@ title:
   pick_random: "Shall I pick a character's race, role, gender and alignment for you? [ynq]"
 role:
   choosing: Choosing Role
-  instructions: Pick a role for your character  
+  instructions: Pick a role for your character
+race:
+  choosing: Choosing Race
+  instructions: Pick the race of your %role

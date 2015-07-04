@@ -7,6 +7,7 @@ require "data_loader"
 require "ui"
 require "messages"
 require "role"
+require "race"
 require "selection_screen"
 require "game"
 
