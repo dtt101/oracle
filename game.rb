@@ -2,7 +2,7 @@ require "title_screen"
 
 class Game
 
-  TRAITS = [Role, Race]
+  TRAITS = [Role, Race, Gender]
 
   def initialize
     @ui = UI.new

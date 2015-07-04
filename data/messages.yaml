@@ -9,3 +9,6 @@ role:
 race:
   choosing: Choosing Race
   instructions: Pick the race of your %role
+gender:
+  choosing: Choosing Gender
+  instructions: Pick the gender of your %race %role

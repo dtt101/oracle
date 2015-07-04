@@ -8,6 +8,7 @@ require "ui"
 require "messages"
 require "role"
 require "race"
+require "gender"
 require "selection_screen"
 require "game"
 
