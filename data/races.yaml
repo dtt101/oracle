@@ -1,1 +1,1 @@
----- name: human  hotkey: h- name: dwarf  hotkey: d- name: gnome  hotkey: g- name: orc  hotkey: o- name: elf  hotkey: e
+---- name: human  hotkey: h  alignments: lnc- name: dwarf  hotkey: d  alignments: l- name: gnome  hotkey: g  alignments: n- name: orc  hotkey: o  alignments: c- name: elf  hotkey: e  alignments: c

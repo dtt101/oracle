@@ -12,3 +12,6 @@ race:
 gender:
   choosing: Choosing Gender
   instructions: Pick the gender of your %race %role
+alignment:
+  choosing: Choosing Alignment
+  instructions: Pick the alignment of your %gender %race %role  

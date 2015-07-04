@@ -9,6 +9,7 @@ require "messages"
 require "role"
 require "race"
 require "gender"
+require "alignment"
 require "selection_screen"
 require "game"
 

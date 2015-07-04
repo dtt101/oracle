@@ -1,18 +1,21 @@
-class Race
+class Alignment
 
   def self.for_options(options)
+    race = options[:race]
     role = options[:role]
 
-    all.select { |race| role.races.include? race.hotkey }
+    possible = role.alignments.chars & race.alignments.chars
+
+    all.select { |alignment| possible.include? alignment.hotkey }
   end
 
   def self.all
-    DataLoader.load_file('races').map do |data|
+    DataLoader.load_file('alignments').map do |data|
       new(data)
     end
   end
 
-  attr_reader :name, :hotkey, :alignments
+  attr_reader :name, :hotkey
 
   def initialize(data)
     data.each do |key, value|
