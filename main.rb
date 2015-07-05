@@ -10,6 +10,8 @@ require "role"
 require "race"
 require "gender"
 require "alignment"
+require "attribute_generator"
+require "player"
 require "selection_screen"
 require "game"
 
