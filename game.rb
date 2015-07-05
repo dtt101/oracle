@@ -9,7 +9,7 @@ class Game
     @options = { quit: false, randall: false }
     at_exit {
       ui.close
-      p options[:player]
+      p options
     }
   end
 
