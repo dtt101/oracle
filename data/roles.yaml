@@ -11,6 +11,13 @@
     dexterity: 7
     constitution: 7
     charisma: 7
+  attribute_probabilities:
+    strength: 20
+    intelligence: 20
+    wisdom: 20
+    dexterity: 10
+    constitution: 20
+    charisma: 10
 - name: Barbarian
   hotkey: b
   races: ho
@@ -23,6 +30,13 @@
     dexterity: 15
     constitution: 16
     charisma: 6
+  attribute_probabilities:
+    strength: 30
+    intelligence: 6
+    wisdom: 7
+    dexterity: 20
+    constitution: 30
+    charisma: 7
 - name: Caveman
   hotkey: d
   races: hdg
@@ -35,6 +49,13 @@
     dexterity: 7
     constitution: 8
     charisma: 6
+  attribute_probabilities:
+    strength: 30
+    intelligence: 6
+    wisdom: 7
+    dexterity: 20
+    constitution: 30
+    charisma: 7
 - name: Healer
   hotkey: h
   races: hg
@@ -47,6 +68,13 @@
     dexterity: 7
     constitution: 11
     charisma: 16
+  attribute_probabilities:
+    strength: 15
+    intelligence: 20
+    wisdom: 20
+    dexterity: 15
+    constitution: 25
+    charisma: 5
 - name: Knight
   hotkey: k
   races: h
@@ -59,6 +87,13 @@
     dexterity: 8
     constitution: 10
     charisma: 17
+  attribute_probabilities:
+    strength: 30
+    intelligence: 15
+    wisdom: 15
+    dexterity: 10
+    constitution: 20
+    charisma: 10
 - name: Monk
   hotkey: m
   races: h
@@ -71,6 +106,13 @@
     dexterity: 8
     constitution: 7
     charisma: 7
+  attribute_probabilities:
+    strength: 25
+    intelligence: 10
+    wisdom: 20
+    dexterity: 20
+    constitution: 15
+    charisma: 10
 - name: Priest
   hotkey: p
   races: he
@@ -83,6 +125,13 @@
     dexterity: 7
     constitution: 7
     charisma: 7
+  attribute_probabilities:
+    strength: 15
+    intelligence: 10
+    wisdom: 30
+    dexterity: 15
+    constitution: 20
+    charisma: 10
 - name: Rogue
   hotkey: r
   races: he
@@ -95,6 +144,13 @@
     dexterity: 10
     constitution: 7
     charisma: 6
+  attribute_probabilities:
+    strength: 20
+    intelligence: 10
+    wisdom: 10
+    dexterity: 30
+    constitution: 20
+    charisma: 10
 - name: Ranger
   hotkey: R
   races: hego
@@ -107,6 +163,13 @@
     dexterity: 9
     constitution: 13
     charisma: 7
+  attribute_probabilities:
+    strength: 30
+    intelligence: 10
+    wisdom: 10
+    dexterity: 20
+    constitution: 20
+    charisma: 10
 - name: Samurai
   hotkey: s
   races: h
@@ -119,6 +182,13 @@
     dexterity: 10
     constitution: 17
     charisma: 6
+  attribute_probabilities:
+    strength: 30
+    intelligence: 10
+    wisdom: 8
+    dexterity: 30
+    constitution: 14
+    charisma: 8
 - name: Tourist
   hotkey: t
   races: h
@@ -131,6 +201,13 @@
     dexterity: 7
     constitution: 7
     charisma: 10
+  attribute_probabilities:
+    strength: 15
+    intelligence: 10
+    wisdom: 10
+    dexterity: 15
+    constitution: 30
+    charisma: 20
 - name: Valkyrie
   hotkey: v
   races: hd
@@ -142,6 +219,13 @@
     wisdom: 7
     dexterity: 7
     constitution: 10
+    charisma: 7
+  attribute_probabilities:
+    strength: 30
+    intelligence: 6
+    wisdom: 7
+    dexterity: 20
+    constitution: 30
     charisma: 7
 - name: Wizard
   hotkey: w
@@ -155,3 +239,10 @@
     dexterity: 7
     constitution: 7
     charisma: 7
+  attribute_probabilities:
+    strength: 10
+    intelligence: 30
+    wisdom: 10
+    dexterity: 20
+    constitution: 20
+    charisma: 10
